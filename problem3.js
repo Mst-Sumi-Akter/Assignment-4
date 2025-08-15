@@ -1,36 +1,3 @@
-
-
-function totalFine( fare ) {
- // You have to write your code here
-
-if (typeof fare !== "number" || fare <= 0){
-
-   return 'Invalid';
-
-}
-
-let surcharge = fare * 0.2;
-let fine = fare + surcharge + 30;
-return fine ;
-
-}
-
-
-
-function  onlyCharacter(str ) {
-          // You have to write your code here
-          if (typeof str !== "string"){
-            return 'Invalid' ;
-          }
-        //   let noSpace = str.replace(/^\s+|\s+$/gm,'');
-          let result = str.toUpperCase();
-          let noSpaces = result.replace(/\s+/g , "");
-          return noSpaces;
-
-
-}
-
-
 function  bestTeam( player1, player2 ) {
           // You have to write your code here
 
@@ -63,3 +30,8 @@ function  bestTeam( player1, player2 ) {
           }
 
 }
+
+console.log (bestTeam({ name: "Germany", foul: 10, cardY: 1, cardR: 1 },
+{ name: "France", foul: 10, cardY: 2, cardR: 1 }));
+
+

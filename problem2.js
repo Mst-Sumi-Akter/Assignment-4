@@ -11,5 +11,5 @@ function  onlyCharacter(str ) {
 
 }
 
-let charecter = onlyCharacter("  h e llo wor   ld");
+let charecter = onlyCharacter(true);
 console.log(charecter);
